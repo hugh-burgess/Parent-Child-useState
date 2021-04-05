@@ -12,7 +12,7 @@ function App() {
   }
 
   function handleButtonReset(onClick) {
-    setName(name);
+    setName("Pete");
   }
 
   function updateName(updateName) {
