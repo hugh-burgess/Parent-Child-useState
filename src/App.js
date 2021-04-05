@@ -7,24 +7,20 @@ import { useState } from "react";
 function App() {
   const [name, setName] = useState("Pete");
 
-  function handleButtonClicked(onClick) {
-    setName("Dave");
+  function handleButtonClicked(blahblah) {
+    setName(blahblah);
   }
 
-  function handleButtonReset(onClick) {
-    setName("Pete");
+  function handleButtonReset(blahblah) {
+    setName(blahblah);
   }
 
-  function updateName(updateName) {
-    setName(updateName);
-  }
   return (
     <div className="App">
       <Parent
         handleButtonReset={handleButtonReset}
         handleButtonClicked={handleButtonClicked}
         name={name}
-        updateName={updateName}
       />
     </div>
   );
