@@ -7,12 +7,12 @@ import { useState } from "react";
 function App() {
   const [name, setName] = useState("Pete");
 
-  function handleButtonClicked(onClick) {
+  function handleButtonClicked({ onClick }) {
     setName("Dave");
   }
 
-  function handleButtonReset(onClick) {
-    setName("Pete");
+  function handleButtonReset({ onClick }) {
+    setName(name);
   }
 
   function updateName(updateName) {
