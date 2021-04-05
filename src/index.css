@@ -47,11 +47,12 @@ code {
 .clickMeButton {
   width: 30%;
   margin: 0 auto;
+  padding: 1px;
   height: 20px;
-  transition: height 0.3s;
+  transition: padding 0.3s;
 }
 .clickMeButton:hover {
-  height: 40px;
+  padding: 70px;
   border-radius: 15px;
 }
 
